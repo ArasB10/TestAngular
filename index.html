@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>AngularJS Services</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div ng-app="app">
+      <h1>Services</h1>
+      
+      <div ng-controller="controllerCreate as vm">
+      <div ng-include="'external.html'"></div>
+        <h2>{{vm.isShown}}</h2>
+        <button ng-click="vm.hi()">
+            Say hi
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
